@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+</head>
+<body>
+    <blockquote>
+        <h1> Bookstore</h1> <br> 
+        <ul>
+            <li>book1</li>
+            <li>book1</li>
+            <li>book1</li>
+            <li>book1</li>
+            <li>book1</li>
+            <li>book1</li>
+        </ul>
+        <button onclick="logout()"> logout</button>
+    </blockquote>
+    <script>
+        let username=localStorage.getItem('username');
+        if(username==null){
+            window.location.href="index.html";
+        }
+        function logout(){
+            localStorage.clear();
+            window.location.href="index.html";
+        }
+    </script>
+</body>
+</html>

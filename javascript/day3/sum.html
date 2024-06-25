@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <script src="js/custom.js"></script>
+     <blockquote>
+        <h1> Add Two Numbers</h1>
+        First Number <input type="text" id="fn"><br><br>
+        Second Number <input type="text" id="sn"><br><br>
+       
+        <button onclick="addNum()"> Add</button> <br><br>
+        Result <input type="text" readonly id="result"><br><br>
+        <h1> Substract Two Numbers</h1>
+        First Number <input type="text" id="fn1"><br><br>
+        Second Number <input type="text" id="sn1"><br><br>
+       
+        <button onclick="addNum1()"> Substract </button> <br><br>
+        Result <input type="text" readonly id="result1"><br><br>
+    <script>
+        function addNum(){
+            let fn =parseInt(document.getElementById('fn').value);
+            let sn =parseInt(document.getElementById('sn').value);
+            let result=fn+sn;
+            document.getElementById('result').value=result;
+        }
+        function addNum1(){
+            let fn1=parseFloat(document.getElementById('fn1').value);
+            let fn2=parseFloat(document.getElementById('fn1').value);
+        }
+    </script>
+     </blockquote> 
+</body>
+</html>

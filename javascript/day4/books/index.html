@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <blockquote>
+        <h1>login  </h1>
+        <label for="username">username </label><br><br>
+        <input type="text" id="username"><br><br>
+        <label for="password">password </label><br><br>
+        <input type="text" id="password"><br><br>
+        <button onclick="login()"> Login</button>
+    </blockquote>
+    <script>
+        let username=localStorage.getItem('username');
+        if(username!=null){
+            window.location.href="welcome.html";
+        }
+        function login(){
+
+        let username=document.getElementById('username').value;
+        let password=document.getElementById('password').value;
+        if(username=='admin' && password =='admin'){
+            localStorage.setItem('username',username);
+            window.location.href="welcome.html";
+        }
+        else{
+            alert('login failed');
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+    <style>
+        #container {
+            width: 90%;
+            margin: auto;
+            min-height: 400px;
+            background: gray;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background: rgb(221, 160, 169);
+
+        }
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background: rgb(160, 221, 168);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script>
+        let outPut = " ";
+
+
+        //         for(let i=0;i<20;i++){
+        // outPut+="<div class='box'></div>"
+        //         }
+        //         document.getElementById('container').innerHTML=outPut;
+
+
+
+        for (let i = 0; i < 20; i++) {
+            if (i % 2 == 0) {
+                outPut += "<div class='box'></div>"
+            }
+            else {
+                outPut += "<div class='box1'></div>"
+            }
+        }
+        document.getElementById('container').innerHTML = outPut;
+
+
+
+
+
+
+
+
+
+
+        //    for(let i=1;i<=20;i++){
+        //     console.log(i)
+        //    }
+        // let outPut1="";
+        // for(let i=2;i<=20;i++){
+        // outPut+=<
+        // }
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- array
+  function 
+  while lopp
+   do while  -->
