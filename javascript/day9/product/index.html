@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+   
+</head>
+<body>
+   
+    <blockquote>
+        <h1> PRODUCT DESCRIPTION</h1>
+
+    <form onsubmit="addRecord(event)">
+        Name: <input type="text" id="name" required>
+        Brand :<input type="text" id="brand" required>
+        Price <input type="number"id="price" required>
+        <button type="submit"> submit</button>
+        
+    </form>
+    <br><br>
+        <table border="2" width="100%">
+            <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Product Name</th>
+                <th>Product Brand</th>
+                <th>Product Price</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="detail">
+
+        </tbody>
+        </table>
+    </blockquote>
+    <script src="product.js"></script>
+</body>
+</html>

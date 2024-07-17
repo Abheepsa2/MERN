@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <blockquote>
+        <h1>Student Record</h1>
+        <form onsubmit="addRecord(event)">
+            <input type="hidden" id="criteria">
+          Name:  <input type="text" id="name" required>
+          Address:<input type="text" id="address" required><br><br>
+          Age:  <input type="number" id="age" required>
+        <button  id="btn_name">Submit</button><br><br>
+
+
+        </form>
+        <table border="1" width="100%">
+            <thead>
+               <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Ages</th>
+                <th colspan="2">Action</th>
+              
+               </tr>
+            </thead>
+            <tbody id="result">
+   
+            </tbody>
+        </table>
+    </blockquote>
+    <script src="student.js"></script>
+</body>
+</html>

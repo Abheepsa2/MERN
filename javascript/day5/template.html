@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+    <style>
+        #container {
+            width: 90%;
+            margin: auto;
+            min-height: 200px;
+            background: gray;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        #container1 {
+            /* margin-top: 20px; */
+            margin-top: 200px;
+            width: 90%;
+            margin: auto;
+            min-height: 200px;
+            background: gray;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background: rgb(221, 160, 169);
+            margin: 10px;
+            padding: 10px;
+            align-content: center;
+            text-align: center;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background: rgb(160, 221, 168);
+            margin: 10px;
+            padding: 6px;
+            align-content: center;
+            text-align: center;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 100px;
+            background: rgb(160, 221, 168);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"> </div>
+    <div id="container1"></div>
+    <script>
+        let outPut = "";
+
+        for (let i = 0; i < 6; i++) {
+            if (i % 2 == 0) {
+
+                outPut += "<div class='box'>Red</div>"
+            
+            }
+            else {
+                for (let i = 0; i <= 4; i++) {
+                    console.log(i);
+                    if (i % 2 == !0) {
+
+                        outPut += "<div class='box1'>Green</div>"
+                         }
+                    else  {
+
+                        // document.getElementById('container1').innerHTML = outPut;
+                    }
+                }
+                document.getElementById('container1').innerHTML = outPut;
+            }
+        }
+        document.getElementById('container').innerHTML = outPut;
+           
+
+
+
+
+        // document.getElementById('container').innerHTML = outPut;
+
+
+
+    </script>
+</body>
+
+</html>
