@@ -1,0 +1,9 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.my-header{
+    background-color:aqua;
+    width: 100%;
+    height:80px;
+}
